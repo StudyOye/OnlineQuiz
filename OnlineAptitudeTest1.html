@@ -1,0 +1,854 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" type="image/x-icon">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width">
+<base target="_blank">
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+  <meta name="description" content="Liquid Slider : A JQuery Slider Plugin" />
+
+  <!-- You may want to "minify" these after making edits http://www.refresh-sf.com/yui/ -->
+  <link rel="stylesheet" href="https://googledrive.com/host/0B_WaJGuAURQQckdGdDgxYnkxVkU"> <!-- Optional -->
+  <link rel="stylesheet" href="https://googledrive.com/host/0B_WaJGuAURQQMWJDdHBwdkt5ZlU">
+
+  <!-- Liquid Slider relies on jQuery -->
+  <script src="https://googledrive.com/host/0B_WaJGuAURQQRkswSVZMbXY0WVU"></script>
+  <!-- More scripts below! -->
+
+
+
+<title>ONLINE TEST</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Impact:400|Raleway:700,400|Roboto:400|Syncopate:400,700">
+
+<link href='/static/forms/client/css/4128741971-formview_st_ltr.css' type='text/css' rel='stylesheet'>
+<style type="text/css">
+body {
+  background-color: rgb(100,252,252);
+  background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/bf3c171080e8d6fad16dc3af5863156c04d34f953b66b6e4f3b3b659cbaaaf62/rough-bg.png');
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+.ss-form-container, .ss-resp-card {
+  background-color: rgb(100,255,255);
+}
+
+.ss-footer, .ss-response-footer {
+  background-color: rgb(100,255,255);
+}
+
+.ss-grid-row-odd {
+  background-color: rgb(242,242,242);
+}
+
+.ss-form-container, .ss-resp-card {
+  border-color: rgb(194,194,194);
+}
+
+.ss-form-title {
+  text-align: center;
+}
+
+.ss-form-title[dir="rtl"] {
+  text-align: center;
+}
+
+.ss-form-desc {
+  text-align: center;
+}
+
+.ss-form-desc[dir="rtl"] {
+  text-align: center;
+}
+
+.ss-header-image-container {
+  height: auto;
+  text-align: center;
+}
+
+.ss-header-image-image {
+  background-image: url('https://lh3.googleusercontent.com/ywwaM81oL6GG5I7xxCJGln-bJxYGpGw423u00iGpKQ5yyZBSswxEv9-GJGgaYscDrG-pcA');
+}
+
+.ss-header-image-sizer {
+  padding-top: 25.000%;
+}
+
+.ss-item {
+  font-size: 1.250rem;
+}
+
+.ss-choices {
+  font-size: 1.080rem;
+}
+
+body {
+  font-family: "Impact";
+  color: rgb(32,18,77);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-record-username-message {
+  font-family: "Impact";
+  color: rgb(32,18,77);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-form-title {
+  font-family: "Syncopate";
+  color: rgb(219,68,55);
+  font-weight: 700;
+  font-size: 2.460rem;
+  font-style: normal;
+}
+
+.ss-confirmation {
+  font-family: "Syncopate";
+  color: rgb(217,61,46);
+  font-weight: 700;
+  font-size: 2.460rem;
+  font-style: normal;
+}
+
+.ss-page-title, .ss-section-title {
+  font-family: "Syncopate";
+  color: rgb(219,68,55);
+  font-weight: 700;
+  font-size: 1.845rem;
+  font-style: normal;
+}
+
+.ss-form-desc, .ss-page-description, .ss-section-description {
+  font-family: "Impact";
+  color: rgb(32,18,77);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-resp-content {
+  font-family: "Impact";
+  color: rgb(32,18,77);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-q-title {
+  font-family: "Raleway";
+  color: rgb(0,0,255);
+  font-weight: 700;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-embeddable-object-container .ss-q-title {
+  font-family: "Raleway";
+  color: rgb(0,0,255);
+  font-weight: 700;
+  font-size: 1.845rem;
+  font-style: normal;
+}
+
+.ss-q-help, .ss-q-time-hint {
+  font-family: "Roboto";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
+  font-family: "Roboto";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.error-message, .required-message, .ss-required-asterisk {
+  font-family: "Roboto";
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-send-email-receipt {
+  font-family: "Raleway";
+  color: rgb(0,0,255);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-password-warning {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: italic;
+}
+
+.disclaimer {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 0.850rem;
+  font-style: normal;
+}
+
+.ss-footer-content {
+  font-family: "Arial";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.progress-label {
+  font-family: "Roboto";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+a:link {
+  color: rgb(0,0,238);
+}
+
+a:visited {
+  color: rgb(85,26,139);
+}
+
+a:active {
+  color: rgb(252,0,0);
+}
+
+input[type='text'], input:not([type]), textarea {
+  font-size: 1.080rem;
+}
+
+.error, .required, .errorbox-bad {
+  border-color: rgb(196,59,29);
+}
+
+.jfk-progressBar-nonBlocking .progress-bar-thumb {
+  background-color: rgb(132,132,132);
+}
+
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark.png');
+  background-size: 108px 21px;
+  width: 108px;
+  height: 21px;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark_2x.png');
+}
+}
+
+</style>
+
+
+<link href='/static/forms/client/css/3145455273-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+
+<script type="text/javascript">
+          /**
+ * @license
+ *
+ * H5F 1.1.1
+ * See https://github.com/ryanseddon/H5F/ for details.
+ *
+ * Copyright (c) 2013 Ryan Seddon
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+(function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+        </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/oembed?url=https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform&amp;format=xml">
+<meta property="og:title" content="ONLINE TEST"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh5.googleusercontent.com/Ld_JKoWPM2jg8HpO8h_f__QGA5MEEZlA-lHRImw3IJGnk1taplu_PWCosRKd-1QYaps=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="(11th Commerce)"><meta name="twitter:card" content="player"><meta name="twitter:title" content="ONLINE TEST"><meta name="twitter:url" content="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh5.googleusercontent.com/Ld_JKoWPM2jg8HpO8h_f__QGA5MEEZlA-lHRImw3IJGnk1taplu_PWCosRKd-1QYaps=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="(11th Commerce)"><meta name="twitter:site" content="@googledocs">
+<style type="text/css">
+<!--
+.style1 {font-size: 9px}
+.style2 {font-family: AnmolLipi}
+.style3 {font-family: Arial}
+-->
+</style>
+</head>
+<body dir="ltr" class="ss-base-body"><div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="ONLINE TEST">
+<meta itemprop="description" content="(11th Commerce)">
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+
+
+<div class="ss-form-container">
+<!--
+<div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+-->
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">ONLINE TEST</h1>
+<div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">(11th Commerce) [Club A] </div>
+
+</div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/12r6Nbp_vVaj_8MDIYY7k_P_x-0Z-0iSzb13pwLSkGT4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+  <ol role="list" class="ss-question-list" style="padding-left: 0">
+
+<div class="liquid-slider"  id="main-slider" style="margin-left:20px;width:auto;">
+    <div>
+      <h2 class="title"></h2>
+
+<div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">PERSONAL INFORMATION</h2>
+<div class="ss-section-description ss-no-ignore-whitespace"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2113222040"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;Token Number
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="entry.2113222040" id="entry_2113222040" aria-label="Token Number  "><option value=""></option>
+<option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option></select>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1990679968"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;Name
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="entry.1990679968" value="" class="ss-q-short" id="entry_1990679968" dir="auto" aria-label="Name  " title="">
+<br><br><br><br>
+<div class="error-message" id="768695799_errorMessage"></div>
+<div class="required-message">  </div>
+</div></div></div>
+    </div>
+    <div>
+      <h2 class="title style8"></h2>
+
+ <div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">GENERAL KNOWLEDGE</h2>
+<div class="ss-section-description ss-no-ignore-whitespace"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1263456969"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">dunIAw dI s`B qoN au~cI phwVI cotI ik`Qy hY? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q1  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1399763289" value="2" id="group_1399763289_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">nypwl</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1399763289" value="1" id="group_1399763289_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">Bwrq</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1399763289" value="3" id="group_1399763289_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">cIn</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1399763289" value="4" id="group_1399763289_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">pwiksqwn</span></label>
+</li></ul>
+<div class="error-message" id="1263456969_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_179425973"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2"> ikhVw XMqr kYmIkl aUrjw nUM ibjlI iv`c bdldw hY?</span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q2  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.824417953" value="3" id="group_824417953_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">motr</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.824417953" value="2" id="group_824417953_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">jnrytr</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.824417953" value="1" id="group_824417953_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">bYtrI</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.824417953" value="4" id="group_824417953_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">mItr</span></label>
+</li></ul>
+<div class="error-message" id="179425973_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_520012404"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2"> dunIAw dw s`B qoN v`fw twpU ikhVw hY?</span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q3  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1902263241" value="3" id="group_1902263241_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">grInlYNf</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1902263241" value="1" id="group_1902263241_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">ieMglYNf</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1902263241" value="2" id="group_1902263241_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">SRI lMkw</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1902263241" value="4" id="group_1902263241_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">AweIslYNf</span></label>
+</li></ul>
+<div class="error-message" id="520012404_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1376100767"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">APgwinsqwn dI rwjDwnI ikhVI hY?</span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q4  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1101878235" value="2" id="group_1101878235_2" role="radio" class="ss-q-radio" aria-label="2"></span></label>
+    <span class="style2">kwbul</span></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1101878235" value="4" id="group_1101878235_4" role="radio" class="ss-q-radio" aria-label="4">
+    </span><span class="style2">lhOr</span></label>
+    </li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1101878235" value="3" id="group_1101878235_3" role="radio" class="ss-q-radio" aria-label="3">
+    </span><span class="style2">kwTmMfU</span></label>
+    </li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1101878235" value="1" id="group_1101878235_1" role="radio" class="ss-q-radio" aria-label="1">
+    </span><span class="style2">iesqwnbul</span></label>
+    </li></ul>
+<div class="error-message" id="1376100767_errorMessage"></div>
+<div class="required-message"> </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <h2 align="center" class="title style1"></h2>
+<div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">SELECT ONE</h2>
+<div class="ss-section-description ss-no-ignore-whitespace"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_932523201"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="style2">eI-myl Byjx smyN ikhVw pRotokOl iesiqmwl kIqw jWdw hY</span>?</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="entry.932523201" id="entry_932523201" aria-label="Q5  " style="font-size:15px" ><option value=""></option>
+<option value="4">HTTP</option> <option value="3">HTML</option> <option value="1">FTP</option> <option value="2">SMTP</option></select>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1155438122"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2"> pRogrwm iv`c </span> printf()<span class="style2"> Aqy</span> scanf()
+  <span class="style2"> PMkSn vrqx leI ikhVI hYfr PweIl Swiml kIqI jWdI hY</span>?</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="entry.1155438122" id="entry_1155438122" aria-label="Q6  " style="font-size:15px" ><option value=""></option>
+<option value="2">stdio.h</option> <option value="1">conio.h</option> <option value="3">scan.h</option> <option value="4">print.h</option></select>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1779983652"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">hyT iliKAW iv`coN ikhVw nMbr 4 nwl Bwg ho skdw hY?</span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="entry.1779983652" id="entry_1779983652" aria-label="Q7  " style="font-size:15px" ><option value=""></option>
+<option value="1">446</option> <option value="3">952</option> <option value="4">638</option> <option value="2">430</option></select>
+<div class="required-message">  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <h2 align="center" class="title style1"></h2>
+<div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">ODD ONE OUT</h2>
+<div class="ss-section-description ss-no-ignore-whitespace style2">v`Krw pCwxo</div>
+</div>
+</div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1543734793"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q8  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.334289821" value="3" id="group_334289821_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">Avwst</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.334289821" value="1" id="group_334289821_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">kuie`k hIl</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.334289821" value="4" id="group_334289821_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">nOrtn</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.334289821" value="2" id="group_334289821_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">ivMfoz</span></label>
+</li></ul>
+<div class="error-message" id="1543734793_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_5602942"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q9  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2082154173" value="2" id="group_2082154173_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">char</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2082154173" value="3" id="group_2082154173_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">int</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2082154173" value="1" id="group_2082154173_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label">float</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.2082154173" value="4" id="group_2082154173_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">print</span>
+</label>
+</li></ul>
+<div class="error-message" id="5602942_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2147242964"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q10  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1861246850" value="4" id="group_1861246850_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+      <span class="style2">sicn qMdUlkr</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1861246850" value="3" id="group_1861246850_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label"><span class="style2">sOrv gWgulI</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1861246850" value="1" id="group_1861246850_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label"><span class="style2">rwhul dRwivf</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1861246850" value="2" id="group_1861246850_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label"><span class="style2">ivrwt kohlI</span></span>
+</label>
+</li></ul>
+<div class="error-message" id="2147242964_errorMessage"></div>
+<div class="required-message">  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <h2 align="center" class="title style1"></h2>
+<div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">TECH CORNER</h2>
+<div class="ss-section-description ss-no-ignore-whitespace"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_102346246"><br><div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">sI BwSw iks ivAkqI dy idmwg dI kwF hY?</span>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q11  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.949897666" value="4" id="group_949897666_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">ib`l gyts <span class="style3">(Bill Gates)</span></span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.949897666" value="1" id="group_949897666_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">stIv jObz <span class="style3">(Steve Jobs)</span></span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.949897666" value="2" id="group_949897666_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">s`iqAw nwfylw <span class="style3">(Satya Nadela)</span></span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.949897666" value="3" id="group_949897666_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">fYins ircI <span class="style3">(Dennis Ritchie)</span></span></label>
+</li>
+</ul>
+<div class="error-message" id="102346246_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1486758207"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">tI.vI. iv`c rMgdwr qsvIrW ilAwaux leI vriqAw jWdw klr mOfl</span>:</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q12  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1234540937" value="2" id="group_1234540937_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">RGB</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1234540937" value="4" id="group_1234540937_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">DPI</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1234540937" value="1" id="group_1234540937_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label">WIN</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1234540937" value="3" id="group_1234540937_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">CRT</span>
+</label>
+</li></ul>
+<div class="error-message" id="1486758207_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_495497709"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp; int num[ ] = { 3, 5, 7, 9, 11, 13 };  <span class="style2">ies iv`c </span>num[3] <span class="style2">dI kI kImq hY? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q13  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.395089193" value="4" id="group_395089193_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">7</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.395089193" value="3" id="group_395089193_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">9</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.395089193" value="1" id="group_395089193_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label">11</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.395089193" value="2" id="group_395089193_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">3</span>
+</label>
+</li></ul>
+<div class="error-message" id="495497709_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_456197105"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp; ___________
+  <span class="style2">sI pRogrwm nUM mSInI BwSw iv`c bdldw hY? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q14  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.478728794" value="2" id="group_478728794_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label"><span class="style2">kMpwielr</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.478728794" value="3" id="group_478728794_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label"><span class="style2">AwpryitMg isstm</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.478728794" value="4" id="group_478728794_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label"><span class="style2">AYfItr</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.478728794" value="1" id="group_478728794_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label"><span class="style2">notpYf</span></span>
+</label>
+</li></ul>
+<div class="error-message" id="456197105_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1821180544"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;.MOV <span class="style2"> AYktYNSn iks iksm dI PweIl leI huMdI hY? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q15  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1049469803" value="2" id="group_1049469803_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label"><span class="style2">AwfIE</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1049469803" value="4" id="group_1049469803_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label"><span class="style2">mUvI</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1049469803" value="1" id="group_1049469803_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label"><span class="style2">qsvIr</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1049469803" value="3" id="group_1049469803_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label"><span class="style2">dsqwvyz</span></span>
+</label>
+</li></ul>
+<div class="error-message" id="1821180544_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_111263860"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;
+  <span class="style2">hyTW ilKIAW iv`coN s`B qoN v`D smr`Qw vwlI mYmrI ikhVI hY? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q16  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.50611835" value="3" id="group_50611835_3" role="radio" class="ss-q-radio" aria-label="3">
+</span><span class="style2">hwrf ifsk</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.50611835" value="4" id="group_50611835_4" role="radio" class="ss-q-radio" aria-label="4">
+</span><span class="style2">pY~n frweIv</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.50611835" value="1" id="group_50611835_1" role="radio" class="ss-q-radio" aria-label="1">
+</span><span class="style2">rYm</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.50611835" value="2" id="group_50611835_2" role="radio" class="ss-q-radio" aria-label="2">
+</span><span class="style2">sI.fI.</span></label>
+</li></ul>
+<div class="error-message" id="111263860_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2142220227"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">Asl mwpdMfW Anuswr sI.fI. ikMny imMtW dw sMMgIq stor krdI hY? </span>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q17  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1687378939" value="2" id="group_1687378939_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">74 min</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1687378939" value="1" id="group_1687378939_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label">60 min</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1687378939" value="3" id="group_1687378939_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">90 min</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1687378939" value="4" id="group_1687378939_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">58 min</span>
+</label>
+</li></ul>
+<div class="error-message" id="2142220227_errorMessage"></div>
+<div class="required-message">  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <h2 align="center" class="title style1"></h2>
+<div class="errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-section-header"><div class="ss-form-entry">
+<h2 class="ss-section-title">SOLVE THE PUZZLE</h2>
+<div class="ss-section-description ss-no-ignore-whitespace"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_857150193"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;555 + 111 + ? = 888</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q18  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1487629969" value="3" id="group_1487629969_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">333</span></label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1487629969" value="2" id="group_1487629969_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">222</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1487629969" value="4" id="group_1487629969_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">444</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1487629969" value="1" id="group_1487629969_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label">111</span>
+</label>
+</li></ul>
+<div class="error-message" id="857150193_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1168207603"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2"> tYlIPon dy nMbr pYf qy id`qy swry nMbrW nUM guxw krn qy kI pRwpq hovygw? </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q19  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.136045823" value="3" id="group_136045823_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label">362</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.136045823" value="1" id="group_136045823_1" role="radio" class="ss-q-radio" aria-label="1"></span>
+<span class="ss-choice-label">1</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.136045823" value="2" id="group_136045823_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label">36280</span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.136045823" value="4" id="group_136045823_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label">0</span>
+</label>
+</li></ul>
+<div class="error-message" id="1168207603_errorMessage"></div>
+<div class="required-message">  </div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1643150269"><br>
+<div class="ss-q-title">&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2"> &nbsp;&nbsp;dovyN juVvyN BweI hW, dovyN hW juVvy Xwr,<br> 
+&nbsp;&nbsp;&nbsp;&nbsp; jd ie`k iv`CV jwey, dUjw ho jwvy bykwr </span></div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Q20  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.937366444" value="3" id="group_937366444_3" role="radio" class="ss-q-radio" aria-label="3">
+</span>
+<span class="ss-choice-label"><span class="style2">ju`qI</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.937366444" value="2" id="group_937366444_2" role="radio" class="ss-q-radio" aria-label="2">
+</span>
+<span class="ss-choice-label"><span class="style2">A`KW</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.937366444" value="1" id="group_937366444_1" role="radio" class="ss-q-radio" aria-label="1">
+</span>
+<span class="ss-choice-label"><span class="style2">rumwl</span></span>
+</label>
+</li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.937366444" value="4" id="group_937366444_4" role="radio" class="ss-q-radio" aria-label="4">
+</span>
+<span class="ss-choice-label"><span class="style2">vylxw</span></span>
+</label>
+</li></ul>
+<div class="error-message" id="1643150269_errorMessage"></div>
+<div class="required-message">  </div></div></div></div>
+ </div>
+    <div>
+      <h2 class="title"></h2>
+      <br>
+      <br>
+      <br>
+      
+
+<input type="hidden" name="draftResponse" value="[,,&quot;120481892753678707&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<input type="hidden" name="fvv" value="0">
+
+
+<input type="hidden" name="fbzx" value="120481892753678707">
+
+<div class="ss-item ss-navigate"> 
+  <table id="navigation-table"><tbody><tr><td width="115" height="40" class="ss-form-entry goog-inline-block style1" id="navigation-buttons" dir="ltr">
+<div align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action " style="font-size:36px" align="absmiddle">
+</div>
+<div class="ss-password-warning ss-secondary-text"></div></td>
+</tr></tbody></table>
+ <p>&nbsp;<br>
+              <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </p>
+        </div>
+    </div>
+</div></ol>
+</form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr">
+<div class="ss-terms"><span class="disclaimer-msg"></span>
+<br>
+</div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic></div></div>
+
+
+<script type='text/javascript' src='/static/forms/client/js/4035192025-formviewer_prd.js'></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,,[]\n]\n");</script></div>
+						
+			 <!-- Feel free to load scripts in the footer -->
+  <script src="https://googledrive.com/host/0B_WaJGuAURQQZkg5TFlxQlhBeDQ"></script>
+  <script src="https://googledrive.com/host/0B_WaJGuAURQQWVhpWFNrV2Z2Umc"></script>
+  <script src="https://googledrive.com/host/0B_WaJGuAURQQUThGWVUxNG9Pbzg"></script>  
+  <script>
+    $('#main-slider').liquidSlider();
+
+    /* If you need to access the internal property or methods, use this:
+    var api = $.data( $('#slider-id')[0], 'liquidSlider');
+    */
+  </script>
+			
+			</body></html>
